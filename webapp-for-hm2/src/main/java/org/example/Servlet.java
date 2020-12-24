@@ -15,6 +15,7 @@ public class Servlet extends HttpServlet{
         out.println("<html>");
         out.println("<body>");
         out.println("<h1>Hello from my project</h1>");
+		out.println("<h2>Hello world</h2>");
         out.println("</body>");
         out.println("</html>");
     }
