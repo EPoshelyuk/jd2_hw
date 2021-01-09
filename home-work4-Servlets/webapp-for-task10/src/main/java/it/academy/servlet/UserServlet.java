@@ -11,7 +11,6 @@ import java.io.PrintWriter;
 public class UserServlet extends HttpServlet {
     private static final long serialVersionUID = -6032621771381296986L;
 
-
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
@@ -20,6 +19,12 @@ public class UserServlet extends HttpServlet {
         String phone = req.getParameter("phone");
         String mail = req.getParameter("e-mail");
 
+        if (name.isEmpty()) {
+            out.println("<html><head><title>User Servlet</title></head>");
+            out.println("<body><h2>Please, enter your name!</h2>");
+            out.println("</body></html>");
+        }
+
         if ((phone.isEmpty()) & (mail.isEmpty())) {
             out.println("<html><head><title>User Servlet</title></head>");
             out.println("<body><h2>Please, enter your phone number or e-mail!</h2>");
@@ -27,9 +32,12 @@ public class UserServlet extends HttpServlet {
         } else {
             out.println("<html><head><title>User Servlet</title></head>");
             out.println("<body><p>Hello " + name + "</p>");
-            out.println("<body><p>Your phone number: " + phone + "</p>");
-            out.println("<body><p>Your e-mail: " + mail + "</p>");
+            if (phone.isEmpty() == false)
+                out.println("<p>Your phone number: " + phone + "</p>");
+            if (mail.isEmpty() == false)
+                out.println("<p>Your e-mail: " + mail + "</p>");
             out.println("</body></html>");
         }
     }
 }
+
