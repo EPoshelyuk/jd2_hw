@@ -9,7 +9,7 @@
       <servlet-class>it.academy.servlet.MyServlet</servlet-class>
       <init-param>
           <param-name>URL</param-name>
-          <param-value>jdbc:mysql://localhost:3306/listexpenses</param-value>
+          <param-value>jdbc:mysql://localhost:3306/listexpenses?serverTimezone=UTC</param-value>
       </init-param>
       <init-param>
           <param-name>USER</param-name>
