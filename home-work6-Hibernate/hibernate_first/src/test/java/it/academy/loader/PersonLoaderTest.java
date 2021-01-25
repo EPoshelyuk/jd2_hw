@@ -38,6 +38,10 @@ public class PersonLoaderTest {
             throw e;
         }
         assertNotNull(id);
+        Person personForDelete = session.get(Person.class, id);
+        session.beginTransaction();
+        session.delete(personForDelete);
+        session.getTransaction().commit();
     }
 
     @Test

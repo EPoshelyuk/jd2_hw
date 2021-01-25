@@ -1,4 +1,4 @@
-package it.academy.loader.main;
+package it.academy.main;
 
 import it.academy.loader.PersonLoader;
 import it.academy.pojos.Person;
@@ -23,7 +23,7 @@ public class Main {
 
         personLoader.changeAge(person1.getId(), 20);
         personLoader.changeName(person1.getId(), "Sofia");
-        personLoader.changeSurName(person1.getId(), "Smirnov");
+        personLoader.changeSurname(person1.getId(), "Smirnov");
 
     }
 }

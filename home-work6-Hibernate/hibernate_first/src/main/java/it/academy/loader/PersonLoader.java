@@ -60,7 +60,7 @@ public class PersonLoader {
 
     }
 
-    public void changeSurName(Integer id, String surname) {
+    public void changeSurname(Integer id, String surname) {
         Session session = hibernateUtil.getSession();
         Transaction tx = null;
         try {

@@ -64,7 +64,7 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>dependency-jars/</classpathPrefix>
-                            <mainClass>it.academy.loader.main.Main</mainClass>
+                            <mainClass>it.academy.main.Main</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
