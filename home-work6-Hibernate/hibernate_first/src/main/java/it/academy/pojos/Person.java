@@ -1,32 +1,29 @@
 package it.academy.pojos;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import java.io.Serializable;
+import javax.persistence.*;
 
-@Data
+@Entity
+@Table(name = "T_PERSON")
 @NoArgsConstructor
 @AllArgsConstructor
+@Getter
+@Setter
 @EqualsAndHashCode
-@Entity
-public class Person implements Serializable {
+@ToString
+public class Person {
     @Id
     @GeneratedValue
+    @Column(name = "P_ID")
     private Integer id;
 
-    @Column
+    @Column (name = "P_AGE")
     private Integer age;
 
-    @Column
+    @Column (name = "P_NAME")
     private String name;
 
-    @Column
+    @Column (name = "P_SURNAME")
     private String surname;
 }

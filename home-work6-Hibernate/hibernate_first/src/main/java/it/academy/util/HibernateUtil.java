@@ -48,61 +48,9 @@ public class HibernateUtil {
 
 
 
-/*public class HibernateUtil {
-
-    final static Logger log = Logger.getLogger(HibernateUtil.class);
-
-    private static final SessionFactory sessionFactory;
-
-    static {
-        try {
-            Configuration configuration = new Configuration().configure();
-            StandardServiceRegistryBuilder builder = new StandardServiceRegistryBuilder().applySettings(configuration.getProperties());
-            sessionFactory = configuration.buildSessionFactory(builder.build());
-        } catch (HibernateException ex) {
-            System.err.println("Initial SessionFactory creation failed." + ex);
-            throw new ExceptionInInitializerError(ex);
-        }
-    }
-
-    public static Session getSession() {
-        return sessionFactory.openSession();
-    }
-
-    public static void closeSessionFactory() {
-        sessionFactory.close();
-    }
 
 
-}*/
 
-
-/*public class HibernateUtil {
-
-    final static Logger log = Logger.getLogger(HibernateUtil.class);
-
-    static SessionFactory sessionFactory;
-
-
-    private HibernateUtil() {
-        try {
-            Configuration configuration = new Configuration().configure();
-            StandardServiceRegistryBuilder builder = new StandardServiceRegistryBuilder().
-                    applySettings(configuration.getProperties());
-            sessionFactory = configuration.buildSessionFactory(builder.build());
-        } catch (Throwable e) {
-            log.error("Initial SessionFactory creation failed." + e);
-            throw new ExceptionInInitializerError(e);
-        }
-    }
-
-    public static Session getSession() {
-        return   sessionFactory.openSession();
-    }
-
-
-}
-*/
 
 
 /*public class HibernateUtil {
