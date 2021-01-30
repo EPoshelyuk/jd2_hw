@@ -1,4 +1,4 @@
-package it.academy.pojos;
+package it.academy.util;
 
 import org.hibernate.boot.model.naming.Identifier;
 import org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl;
