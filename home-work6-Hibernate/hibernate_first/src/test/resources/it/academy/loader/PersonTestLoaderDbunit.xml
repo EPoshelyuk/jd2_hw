@@ -1,7 +1,8 @@
 <dataset>
-    <T_PERSON P_ID="1" P_AGE="10" P_NAME="IVAN" P_SURNAME="TEST"/>
-    <T_PERSON P_ID="2" P_AGE="20" P_NAME="IVAN" P_SURNAME="TEST"/>
-    <T_PERSON P_ID="3" P_AGE="30" P_NAME="IVAN" P_SURNAME="TEST"/>
-    <T_PERSON P_ID="4" P_AGE="40" P_NAME="IVAN" P_SURNAME="TEST"/>
-    <T_PERSON P_ID="5" P_AGE="50" P_NAME="IVAN" P_SURNAME="TEST"/>
+    <tbl_person ID="1" CITY="Minsk" POSTAL_CODE="200001" STREET="Sadovaya" AGE="10" NAME="IVAN" SURNAME="TEST"/>
+    <tbl_person ID="2" CITY="Minsk" POSTAL_CODE="200002" STREET="Sadovaya" AGE="20" NAME="IVAN" SURNAME="TEST"/>
+    <tbl_person ID="3" CITY="Minsk" POSTAL_CODE="200003" STREET="Sadovaya" AGE="30" NAME="IVAN" SURNAME="TEST"/>
+    <tbl_person ID="4" CITY="Minsk" POSTAL_CODE="200004" STREET="Sadovaya" AGE="40" NAME="IVAN" SURNAME="TEST"/>
+    <tbl_person ID="5" CITY="Minsk" POSTAL_CODE="200005" STREET="Sadovaya" AGE="50" NAME="IVAN" SURNAME="TEST"/>
 </dataset>
+

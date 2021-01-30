@@ -1,12 +1,8 @@
 package it.academy.loader;
 
 import it.academy.pojos.Person;
-import it.academy.util.HibernateUtil;
-import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.junit.Test;
-
-import javax.net.ssl.HandshakeCompletedEvent;
 import java.util.List;
 
 import static org.junit.Assert.*;

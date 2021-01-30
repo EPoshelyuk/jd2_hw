@@ -1,11 +1,11 @@
 package it.academy.pojos;
 
 import lombok.*;
-
+import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "T_PERSON")
+@Table(name = "PERSON")
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
@@ -14,16 +14,16 @@ import javax.persistence.*;
 @ToString
 public class Person {
     @Id
-    @GeneratedValue
-    @Column(name = "P_ID")
+    @GeneratedValue(generator = "increment-generator")
+    @GenericGenerator(name = "increment-generator", strategy = "increment")
+
     private Integer id;
 
-    @Column (name = "P_AGE")
     private Integer age;
 
-    @Column (name = "P_NAME")
     private String name;
 
-    @Column (name = "P_SURNAME")
     private String surname;
+
+    private Address address;
 }

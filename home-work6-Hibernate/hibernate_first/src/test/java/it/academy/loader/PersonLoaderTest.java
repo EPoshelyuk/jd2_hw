@@ -1,5 +1,6 @@
 package it.academy.loader;
 
+import it.academy.pojos.Address;
 import it.academy.pojos.Person;
 import it.academy.util.HibernateUtil;
 import org.hibernate.Session;
@@ -16,6 +17,7 @@ import static org.junit.Assert.*;
 public class PersonLoaderTest {
 
     private Session session;
+    Address address = new Address("Sadovaya", "Minsk", "200000");
 
     @Before
     public void setUp() throws Exception {
@@ -26,7 +28,7 @@ public class PersonLoaderTest {
 
     @Test
     public void savePerson() {
-        Person person = new Person(null, 27, "Maria", "Ivanova");
+        Person person = new Person(null, 27, "Maria", "Ivanova", address);
         Transaction tx = null;
         Serializable id;
         try {
@@ -46,7 +48,7 @@ public class PersonLoaderTest {
 
     @Test
     public void deletePerson() {
-        Person person = new Person(null, 66, "Nina", "Ivanova");
+        Person person = new Person(null, 66, "Nina", "Ivanova", address);
         Transaction tx = null;
         try {
             tx = session.beginTransaction();
@@ -63,7 +65,7 @@ public class PersonLoaderTest {
 
     @Test
     public void findPerson() {
-        Person person = new Person(null, 27, "Ivan", "Ivanov");
+        Person person = new Person(null, 27, "Ivan", "Ivanov", address);
         Person expPerson;
         try {
             session.save(person);

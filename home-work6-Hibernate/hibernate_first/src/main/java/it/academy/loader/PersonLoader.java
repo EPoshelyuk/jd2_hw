@@ -10,7 +10,6 @@ public class PersonLoader {
     HibernateUtil hibernateUtil = new HibernateUtil();
     final static Logger log = Logger.getLogger(PersonLoader.class);
 
-
     public void savePerson(Person person) {
         Session session = hibernateUtil.getSession();
         Transaction tx = null;
@@ -56,8 +55,6 @@ public class PersonLoader {
             log.info("Person with id " + id + " was not founded");
             return null;
         }
-
-
     }
 
     public void changeSurname(Integer id, String surname) {
@@ -117,7 +114,6 @@ public class PersonLoader {
         } finally {
             session.close();
         }
-
     }
 }
 
