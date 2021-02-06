@@ -11,19 +11,17 @@ import java.sql.Date;
 
 @Entity
 @Table(name = "PASSPORT")
+@Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 public class Passport {
 
     @Id
     // @Column(name = "P_NUMBER")
-    @Getter
-    @Setter
     private String passportNumber;
 
     // @Column(name = "P_ISSUEDDATE")
-    @Getter
-    @Setter
     private Date issuedDate;
 
     // @Column(name = "P_EXPIRYDATE")

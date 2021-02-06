@@ -11,7 +11,7 @@ import java.sql.Date;
 
 public class Main {
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args)  {
 
         Address address = new Address("Sadovaya", "Minsk", "200000");
         Person person1 = new Person(null, 25, "Maria", "Ivanova", address);
@@ -38,8 +38,6 @@ public class Main {
         passportLoader.savePassword(passport1);
         passportLoader.savePassword(passport2);
 
-        passport1.expiryDate = Date.valueOf("2021-10-10");
-        passport1.loginTime = Date.valueOf("2021-10-10");
 
         Email email1 = new Email(null, "test1", "111");
         Email email2 = new Email(null, "test2", "222");
