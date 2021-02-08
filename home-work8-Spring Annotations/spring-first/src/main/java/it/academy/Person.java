@@ -28,7 +28,7 @@ public class Person {
     @Qualifier("firstAddress")
     private IAddress address;
 
-    @Autowired
+   //@Autowired
     private IEmail email;
 
 }
