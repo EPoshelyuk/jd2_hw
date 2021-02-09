@@ -1,6 +1,6 @@
 package it.academy.main;
 
-import it.academy.Person;
+import it.academy.pojos.Person;
 import it.academy.util.SpringConfig;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
